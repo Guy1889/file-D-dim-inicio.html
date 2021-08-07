@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2? familia=Roboto:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+header{
+   background-image: url('img/picdim-2.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 150px;
+   position: relative;
+
+}
+.overlay{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    bottom: 0;
+    padding: 0!important;
+    margin: 0!important;
+    background-color: rgba(90, 135, 202, 0);
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;  
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+nav li span{
+    padding-left: 5px; 
+}
+
+li a{
+    list-style: none;
+    padding: 5px;
+    background-color:#f0f8ff;
+    text-decoration: none;
+   
+}
+.cart fa-shopping-cart{
+    vertical-align: bottom;
+    font-size: 20px;
+    padding-right: 5PX;
+   
+}
+.cart a{
+   
+    background-color:royalblue;
+    color: #f0f8ff;
+    cursor: pointer;
+    text-decoration:none;
+   
+}
+/*To put the images on the same line*/
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;;
+}
+.img{
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.add-to-cart{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(247, 83, 72);
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;                                                                                                                 
+}
+
+.img:hover .cart1,
+.img:hover .cart2,
+.img:hover .cart3,
+.img:hover .cart4,
+.img:hover .cart5,
+.img:hover .cart6,
+.img:hover .cart7,
+.img:hover .cart8{
+    bottom: 50px;
+    opacity: 1;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+
